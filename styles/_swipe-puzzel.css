@@ -1,0 +1,24 @@
+:root {
+  --dark-gray: #879aa8;
+  --light-gray: #90a3a9;
+  --acc-orange: #d86c46;
+  --pri-black: #111;
+  --pri-beige: #e9d8a6;
+}
+
+.swipe-box {
+  width: 40vw;
+  height: 40vw;
+  background-color: var(--dark-gray);
+  border-radius: 1rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.tile {
+  background-color: var(--light-gray);
+  border-radius: 0.5rem;
+}
