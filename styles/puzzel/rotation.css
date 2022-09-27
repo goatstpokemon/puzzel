@@ -1,0 +1,17 @@
+.r-0 {
+  rotate: 0deg;
+}
+.r-90 {
+  rotate: 90deg;
+}
+.r-180 {
+  rotate: 180deg;
+}
+
+.r-240 {
+  rotate: 240deg;
+}
+
+.flip {
+  transform: scaleX(-1);
+}

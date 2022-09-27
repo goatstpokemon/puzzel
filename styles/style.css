@@ -1,6 +1,7 @@
-@import url(./_flex.css);
-@import url(./_swipe-puzzel.css);
-@import url(./_margin.css);
+@import url(./general/flex.css);
+@import url(./puzzel/swipe-puzzel.css);
+@import url(./general/margin.css);
+@import url(./puzzel/rotation.css);
 @font-face {
   font-family: 'Header';
   src: url('../public/fonts/Prison\ Walls.ttf');
@@ -14,6 +15,7 @@ h4,
 h5,
 h6 {
   font-family: 'Header';
+  letter-spacing: 0.2rem;
 }
 
 p,
@@ -27,7 +29,8 @@ ins,
 del,
 sup,
 sub,
-small {
+small,
+button {
   font-family: 'Amatic SC', cursive;
 }
 
@@ -49,4 +52,13 @@ body {
 .max {
   height: 100vh;
   width: 100vw;
+}
+
+.reset-button {
+  background-color: var(--acc-orange);
+  border: none;
+  border-radius: 0.2rem;
+  padding: 1rem 5rem;
+  color: white;
+  font-size: 1rem;
 }
