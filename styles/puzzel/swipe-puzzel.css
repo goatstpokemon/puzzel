@@ -7,23 +7,16 @@
 }
 
 .swipe-box {
-  width: 40vw;
-  height: 40vw;
-  background-color: var(--dark-gray);
-  border-radius: 1rem;
+  height: 560px;
+  width: 560px;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 0.5rem;
-  padding: 1rem;
-}
-
-.tile {
-  background-color: var(--light-gray);
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2rem;
+  background-color: var(--dark-gray);
   border-radius: 0.5rem;
 }
 
-.tile > img {
-  width: 100%;
+.swipe-box div {
   height: 100%;
+  width: 100%;
 }
