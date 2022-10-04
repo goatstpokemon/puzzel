@@ -9,11 +9,37 @@
     <title>The Great Escape</title>
   </head>
   <body>
-    <section class="flex-container flex-center flex-col max">
-      <h1 class="mb-5">Maak de circuit compleet</h1>
-      <section class="swipe-box"></section>
-      <button class="reset-button mt-5" onclick="init()">Reset</button>
-    </section>
+    <main>
+      <section class="flex-container flex-center flex-col max">
+        <dialog class="modal" id="modal">
+          <form method="dialog">
+            <button class="close">X</button>
+          </form>
+          <h1>Tracing</h1>
+          <p class="mt-5">
+            Je bent bijna ontsnapt, maar om nog echt te ontsnappen moet je nog 1
+            puzzel afronden. <br />
+            Deze wordt je meest uitdagende puzzel tot nu toe. Om je even op weg
+            te helpen hebben we een handleiding gemaakt.
+          </p>
+
+          <h2>Regel 1</h2>
+          <p>
+            De puzzel stukjes kunnen maar 1 vakje opzij. Dit is in de
+            horizontalen en verticale richtig
+          </p>
+          <h2>Regel 2</h2>
+          <p>Je kan de tegels niet draaien</p>
+          <h2>Regel 3</h2>
+          <p>Je kan niet een lege tegel verplaatsen</p>
+          <h2>Regel 4</h2>
+          <p>Er is maar één manier om het oplossen</p>
+        </dialog>
+        <h1 class="mb-5">Maak de circuit compleet</h1>
+        <section class="swipe-box"></section>
+        <button class="reset-button mt-5" onclick="init()">Reset</button>
+      </section>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,12 +1,15 @@
 @import url(./general/flex.css);
 @import url(./puzzel/swipe-puzzel.css);
 @import url(./general/margin.css);
-@import url(./puzzel/rotation.css);
 @font-face {
   font-family: 'Header';
   src: url('../public/fonts/Prison\ Walls.ttf');
 }
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+::backdrop {
+  --color-backdrop: rgba(0, 0, 0, 0.8);
+}
 
 h1,
 h2,
@@ -66,4 +69,31 @@ body {
 
 .blank {
   display: none;
+}
+
+.modal {
+  height: 50vh;
+  max-width: 50vw;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.modal > h1 {
+  text-align: center;
+}
+dialog::backdrop {
+  background-color: var(--color-backdrop);
+}
+
+form {
+  display: flex;
+  justify-content: right;
+}
+.close {
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--acc-orange);
 }
