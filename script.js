@@ -32,8 +32,8 @@ let tiles = [
   'url(img/puzzel-3.png)',
 ];
 const init = () => {
-  gridSquare = [];
   openDialog();
+  
   for (let i = 0; i < wh * wh; i++) {
     let tile = document.createElement('div');
     tile.setAttribute('draggable', true);
@@ -65,9 +65,15 @@ function dragStart() {
   tileBeingDragged = parseInt(this.id);
 }
 function dragEnd() {
-  gridSquare[tileBeingReplaced].style.backgroundImage = imageBeingDragged;
-  gridSquare[tileBeingDragged].style.backgroundImage = imageBeingReplaced;
-  tileBeingReplaced = null;
+  const validMoves = [tileBeingDragged - wh, tileBeingDragged + wh];
+  let validMove = validMoves.includes(tileBeingReplaced);
+  if (tileBeingReplaced && validMove) {
+    gridSquare[tileBeingReplaced].style.backgroundImage = imageBeingDragged;
+    gridSquare[tileBeingDragged].style.backgroundImage = imageBeingReplaced;
+    tileBeingReplaced = null;
+  } else {
+    gridSquare[tileBeingDragged].style.backgroundImage = tileBeingDragged;
+  }
 }
 function dragOver(e) {
   e.preventDefault();
