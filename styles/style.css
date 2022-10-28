@@ -45,8 +45,15 @@ body {
   margin: 0;
   padding: 0;
   background-color: #e9d8a6;
+  touch-action: none;
 }
 
+/* .draggable {
+  transform: rotate(-5deg);
+  position: absolute;
+  width: 50px;
+  height: 50px;
+} */
 /* Styling */
 .full {
   height: 100%;
@@ -96,4 +103,16 @@ form {
   font-size: 1.2rem;
   font-weight: 800;
   color: var(--acc-orange);
+}
+
+.no-pointer {
+  pointer-events: none;
+}
+
+.move {
+  position: absolute;
+  pointer-events: none;
+  transform: rotate(-5deg);
+  width: 80px !important;
+  height: 80px !important;
 }

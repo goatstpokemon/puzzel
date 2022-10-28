@@ -20,3 +20,17 @@
   height: 100%;
   width: 100%;
 }
+
+@media only screen and (max-width: 800px) {
+  .swipe-box {
+    height: 480px;
+    width: 480px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .swipe-box {
+    width: 380px;
+    height: 380px;
+  }
+}
