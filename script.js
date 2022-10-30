@@ -1,5 +1,6 @@
 // ----------------------------- SETUP ------------------------------------------------------------
-var dialog = document.querySelector('dialog');
+var dialog = document.querySelector('.modal');
+var winDialog = document.querySelector('.winmodal');
 const grid = document.querySelector('.swipe-box');
 const ignore = document.querySelector('.ignore');
 const wh = 4;
@@ -57,7 +58,7 @@ let tileBeingReplaced;
 
 // --------------------------------------- Desktop -----------------------------------------------
 const init = () => {
-  // openDialog();
+  openDialog();
   for (let i = 0; i < wh * wh; i++) {
     let tile = document.createElement('div');
     tile.setAttribute('id', i);
@@ -251,7 +252,7 @@ function won() {
     gridSquare[15].style.backgroundImage.toString().toUpperCase() ===
       endTiles[15].toString().toUpperCase()
   ) {
-    console.log('Won');
+    showwinDialog();
   }
 }
 
@@ -260,4 +261,11 @@ function openDialog() {
 }
 function closeDialog() {
   dialog.close();
+}
+
+function showwinDialog() {
+  winDialog.showModal();
+}
+function closeWinDialog() {
+  winDialog.close();
 }

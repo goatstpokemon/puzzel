@@ -86,7 +86,7 @@ body {
   padding: 1.5rem;
 }
 
-.modal > h1 {
+dialog > h1 {
   text-align: center;
 }
 dialog::backdrop {
