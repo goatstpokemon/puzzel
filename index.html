@@ -4,49 +4,284 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/style.css" />
-
+    <link rel="stylesheet" href="./style.css" />
     <title>The Great Escape</title>
   </head>
   <body>
-    <main class="max">
-      <section class="flex-container flex-center flex-col max">
-        <dialog class="modal" id="modal">
-          <form method="dialog">
-            <button class="close">X</button>
-          </form>
-          <h1>Tracing</h1>
-          <p class="mt-5">
-            Je bent bijna ontsnapt, maar om nog echt te ontsnappen moet je nog 1
-            puzzel afronden. <br />
-            Deze wordt je meest uitdagende puzzel tot nu toe. Om je even op weg
-            te helpen hebben we een handleiding gemaakt.
-          </p>
-
-          <h2>Regel 1</h2>
-          <p>
-            De puzzel stukjes kunnen maar 1 vakje opzij. Dit is in de
-            horizontalen en verticale richtig
-          </p>
-          <h2>Regel 2</h2>
-          <p>Je kan de tegels niet draaien</p>
-          <h2>Regel 3</h2>
-          <p>Je kan niet een lege tegel verplaatsen</p>
-          <h2>Regel 4</h2>
-          <p>Er is maar één manier om het oplossen</p>
-        </dialog>
-        <dialog class="winmodal" id="winmodal">
-          <form method="dialog">
-            <button class="close">X</button>
-          </form>
-          <h1>Gefeliciteerd</h1>
-          <p class="mt-5">Je bent ontsnapt!</p>
-        </dialog>
-        <h1 class="mb-5">Maak de circuit compleet</h1>
-        <section class="swipe-box"></section>
-        <button class="reset-button mt-5" onclick="reset()">Reset</button>
+    <main class="scroll-snap">
+      <section class="full-screen">
+        <article class="welcome">
+          <h2>
+            Welkom bij <br />
+            The Great Escape
+          </h2>
+          <a href="#second"> Start Hier</a>
+        </article>
       </section>
+      <section class="full-screen" id="second">
+        <article class="second">
+          <h2>Het dagboek van Giovanni</h2>
+          <h3>7 Januari 2022:</h3>
+          <p>
+            Toen ik wakker werd zag ik dat er een brief op me deurmat lag. Ik
+            maakte hem natuurlijk gelijk open, toen die was geopend las ik al
+            gauw dat ik rechtzaak aan me broek had. Er is al een datum bekend,
+            27 Januari 2022. Maar wat zou ik hebben gedaan, ze zijn toch niet
+            achter dat ene gekomen?? Ik ga in ieder geval maar zoeken naar een
+            goede advocaat voor het geval van het ergste.
+          </p>
+          <button class="volgende" onclick="nextText()">volgende</button>
+        </article>
+        <article class="second hidden">
+          <h2>Het dagboek van Giovanni</h2>
+          <h3>27 Januari 2022:</h3>
+          <p>
+            Vandaag is de rechtzaak, ik hoop dat ik mijn advocaat genoeg heb
+            betaald hiervoor. <br />De uitslag van de rechtzaak is binnen, en
+            het is slecht nieuws. Ik ben onterecht veroordeeld tot 20 jaar in de
+            gevangenis. En onterecht is ook echt onterecht in dit geval, want ik
+            ben veroordeeld voor een misdaad puur omdat ik op iemand leek. Ook
+            zeiden ze bij de rechtzaak dat ik geen persoonlijke items mee mocht
+            nemen naar de gevangenis. Dus dit zal voorlopig 1 van de laatste
+            dingen zijn die ik hierin zet aangezien ze me morgen op komen halen.
+          </p>
+          <button class="volgende" onclick="nextText()">volgende</button>
+        </article>
+        <article class="second hidden">
+          <h2>Het dagboek van Giovanni</h2>
+          <h3>28 Januari 2022:</h3>
+          <p>
+            Vandaag is me laatste dag in vrijheid. Ik wil dan ook in dit dagboek
+            iedereen bedanken voor het leven dat ik heb gehad tot nu toe.
+            Bedankt mam en pap en ook bedankt aan me vrienden voor het altijd er
+            zijn. Dit is dan het laatste voor 20 jaar dat ik hierin schrijf, ook
+            is er wel een kans dat dit anders gaat zijn want ik ga proberen me
+            dagboek mee te smokkelen.
+          </p>
+          <button class="volgende" onclick="nextText()">volgende</button>
+        </article>
+        <article class="second hidden">
+          <h2>Het dagboek van Giovanni</h2>
+          <h3>31 Januari 2022:</h3>
+          <p>
+            Het is me gelukt. Het is me gewoon gelukt, geweldig. Het is gelukt
+            om me dagboek mee te smokkelen, ik wachtte wel een paar dagen met
+            erin schrijven want anders zou het teveel opvallen. De gevangenis
+            hier is raar, er zijn veel gevangenen maar er gaan er ook veel weg.
+            Voor de rest is het eten hier droog en weinig. Verder is het ook
+            raar want elke avond gaan de lichten uit voor een paar minuten, en
+            elke ochtend zijn er vaak weer gevangenen ontsnapt. Ik denk dat ik
+            dat maar moet gaan onderzoeken.
+          </p>
+          <button class="volgende" onclick="nextText()">volgende</button>
+        </article>
+        <article class="second hidden">
+          <h2>Het dagboek van Giovanni</h2>
+          <h3>31 Januari 2037:</h3>
+          <p>
+            Het is 15 jaar in deze gevangenis, ik ben er van overtuigd dat ik
+            nog de enige ben die hier gevangen zit. Ik had, toen er nog wel
+            mensen waren, gehoord dat de gevangenis uit dienst gaat, maar ik ben
+            nu nogsteeds hier en zij zijn al allemaal wel. Het is nu alleen nog
+            maar hele enge bewaker en ik in de gevangenis. De enge bewaker zorgt
+            ervoor dat ik nog grager wil ontsnappen, nu nog een manier vinden.
+            De lichten gaan nogsteeds elke dag een paar minuten uit, misschien
+            zou ik daar wat mee kunnen....
+          </p>
+          <button class="volgende" onclick="nextText()">volgende</button>
+        </article>
+      </section>
+      <section class="full-screen puzzel-1" id="two">
+        <nav>
+          <button class="b1 btn">
+            <h1>Letters Gepakt</h1>
+            <h2 id="score-player">0</h2>
+            <h2>van de 7</h2>
+          </button>
+          <button class="tijd1 btn">
+            <h1>Resterende Tijd</h1>
+            <p id="countdown">2:00</p>
+          </button>
+        </nav>
+        <section class="container">
+          <section class="letter-container">
+            <button onclick="changeColor()" class="letter btn">
+              <a class="box">Z</a>
+            </button>
+
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button onclick="changeColor()" class="letter7 btn">
+              <a class="box">P</a>
+            </button>
+            <button class="letter hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button onclick="changeColor()" class="letter4 btn">
+              <a class="box">L</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button onclick="changeColor()" class="letter6 btn">
+              <a class="box">M</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button onclick="changeColor()" class="letter2 btn">
+              <a class="box">A</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button onclick="changeColor()" class="letter5 btn">
+              <a class="box">A</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button class="letters hide-letter btn">
+              <a href="index.html">big pp</a>
+            </button>
+            <button onclick="changeColor()" class="letter3 btn">
+              <a class="box">K</a>
+            </button>
+          </section>
+        </section>
+      </section>
+      <section class="full-screen" id="three">4</section>
+      <section class="full-screen">5</section>
+      <section class="full-screen">6</section>
     </main>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
+    <script src="./puzzel.js"></script>
   </body>
 </html>

@@ -1,0 +1,24 @@
+.welcome {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.welcome h2 {
+  font-size: 2rem;
+  line-height: 2.2rem;
+}
+
+.welcome a {
+  margin-top: 2rem;
+  background: #d86c46;
+  border-radius: 0.5rem;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  border: none;
+  color: white;
+}
