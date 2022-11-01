@@ -31,8 +31,9 @@ let endTiles = [
 ];
 let startTiles = [
   // Row 1
-  'url(img/puzzel-7.avif)',
+
   'url(img/puzzel-4.avif)',
+  'url(img/puzzel-7.avif)',
   'url(img/puzzel-8.avif)',
   'url(img/puzzel-0.avif)',
 
@@ -162,7 +163,6 @@ function down(event) {
         square.style.backgroundImage.toString().toUpperCase() ===
         'url("img/puzzel-8.png")'.toString().toUpperCase()
       ) {
-        console.log('hello');
         return;
       } else {
         square.setAttribute('placable', true);
@@ -193,12 +193,7 @@ function down(event) {
     this.style.top = '';
     this.style.left = '';
     this.classList.remove('move');
-    console.log({
-      tilebeingreplaced: tileBeingReplaced,
-      tileBeingDragged: tileBeingDragged,
-      imageBeingDragged: imageBeingDragged,
-      imageBeingReplaced: imageBeingReplaced,
-    });
+
     const validMoves = [
       tileBeingDragged - wh,
       tileBeingDragged + wh,

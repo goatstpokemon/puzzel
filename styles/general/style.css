@@ -1,5 +1,6 @@
-@import url(./css/welcome.css);
-@import url(./css/puzzel-1.css);
+@import url(../welcome.css);
+@import url(../puzzel-1.css);
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,9 +8,9 @@
 }
 @font-face {
   font-family: 'Header';
-  src: url('../public/fonts/Prison\ Walls.ttf');
+  src: url('../../public/fonts/Prison\ Walls.ttf');
 }
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
@@ -24,6 +25,7 @@ h6 {
 }
 
 p,
+a,
 span,
 code,
 ul,
@@ -36,6 +38,7 @@ sup,
 sub,
 small,
 button {
+  font-size: 2rem;
   font-family: 'Amatic SC', cursive;
 }
 

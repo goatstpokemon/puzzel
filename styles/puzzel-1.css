@@ -14,7 +14,11 @@ body {
   text-align: center;
   flex-direction: column;
 }
-
+#score-player {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  text-align: center;
+}
 .second p {
   width: 50%;
   text-align: left;
@@ -93,7 +97,6 @@ a {
   display: grid;
   align-content: center;
   justify-items: center;
-
   right: 20px;
   background-color: #d86c46;
   border-radius: 25px;

@@ -1,11 +1,11 @@
 @import url(./general/flex.css);
 @import url(./puzzel/swipe-puzzel.css);
 @import url(./general/margin.css);
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 @font-face {
   font-family: 'Header';
   src: url('../public/fonts/Prison\ Walls.ttf');
 }
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 
 ::backdrop {
   --color-backdrop: rgba(0, 0, 0, 0.8);
@@ -34,6 +34,7 @@ sup,
 sub,
 small,
 button {
+  font-size: 2rem;
   font-family: 'Amatic SC', cursive;
 }
 
@@ -84,6 +85,12 @@ body {
   border: none;
   border-radius: 0.5rem;
   padding: 1.5rem;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
 }
 
 dialog > h1 {

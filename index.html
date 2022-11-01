@@ -4,20 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/general/style.css" />
     <link rel="stylesheet" href="./styles/puzzel-2.css" />
     <title>The Great Escape</title>
   </head>
   <body class="overflow-hidden">
     <main class="scroll-snap">
       <section class="full-screen overflow-hidden">
-        <section class="progress_status">
-          <article>
-            <h2></h2>
-          </article>
-          <article>
-            <h2></h2>
-          </article>
+        <section class="progress_bar">
+          <progress id="file" value="0" max="100">32%</progress>
         </section>
         <article class="welcome">
           <h2>
@@ -28,9 +23,6 @@
         </article>
       </section>
       <section class="full-screen overflow-hidden" id="second">
-        <section class="progress_status">
-          <article class="progress_bar"></article>
-        </section>
         <article class="second">
           <h2>Het dagboek van Giovanni</h2>
           <h3>7 Januari 2022:</h3>
@@ -104,204 +96,202 @@
         </article>
       </section>
       <section class="full-screen puzzel-1" id="two">
-        <section class="progress_status">
-          <article class="progress_bar"></article>
-        </section>
         <nav>
-          <button class="b1 btn">
+          <section class="b1 btn">
             <h1>Letters Gepakt</h1>
             <h2 id="score-player">0</h2>
             <h2>van de 7</h2>
-          </button>
+          </section>
 
-          <button class="tijd1 btn">
+          <section class="tijd1 btn">
             <h1>Resterende Tijd</h1>
             <p id="countdown">2:00</p>
-          </button>
+          </section>
         </nav>
         <section class="container">
           <section class="letter-container">
-            <button onclick="changeColor()" class="letter btn">
+            <section onclick="changeColor()" class="letter btn">
               <a class="box">Z</a>
-            </button>
+            </section>
 
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button onclick="changeColor()" class="letter7 btn">
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section onclick="changeColor()" class="letter7 btn">
               <a class="box">P</a>
-            </button>
-            <button class="letter hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button onclick="changeColor()" class="letter4 btn">
+            </section>
+            <section class="letter hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section onclick="changeColor()" class="letter4 btn">
               <a class="box">L</a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html">p</a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button onclick="changeColor()" class="letter6 btn">
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#">p</a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section onclick="changeColor()" class="letter6 btn">
               <a class="box">M</a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button onclick="changeColor()" class="letter2 btn">
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section onclick="changeColor()" class="letter2 btn">
               <a class="box">A</a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button onclick="changeColor()" class="letter5 btn">
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section onclick="changeColor()" class="letter5 btn">
               <a class="box">A</a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button class="letters hide-letter btn">
-              <a href="index.html"></a>
-            </button>
-            <button onclick="changeColor()" class="letter3 btn">
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section class="letters hide-letter btn">
+              <a href="#"></a>
+            </section>
+            <section onclick="changeColor()" class="letter3 btn">
               <a class="box">K</a>
-            </button>
+            </section>
           </section>
         </section>
       </section>
-      <section class="full-screen" id="three">
-        <section class="progress_status">
-          <article class="progress_bar"></article>
-        </section>
-      </section>
+      <section class="full-screen" id="three"></section>
       <section class="full-screen">
         <section class="progress_status">
           <article class="progress_bar"></article>
         </section>
+        <article>
+          <h2>Het dagboek van Giovanni</h2>
+          <h3>7 Januari 2037:</h3>
+          <p>Ik ben bijna ontsnapt</p>
+        </article>
       </section>
       <section class="full-screen">
         <a href="/puzzel.html">Naar laatste puzzel</a>
