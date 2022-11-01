@@ -84,19 +84,35 @@ body {
 .overflow-hidden {
   overflow: hidden;
 }
-.progrprogress_status {
-  width: 50%;
-  background-color: #ddd;
-}
+
 .progress_bar {
   position: sticky;
-  top: 0;
-  width: 1%;
-  height: 15px;
-  background-color: #4caf50;
-  text-align: center;
-  line-height: 32px;
-  color: black;
+  top: 0.7rem;
+  width: 100vw;
+  display: flex;
+  font-family: 'Header';
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#progress::-moz-progress-bar {
+  background: #d86c46;
+  appearance: none;
+  border: 0;
+  border-radius: 0.2rem;
+}
+#progress::-webkit-progress-value {
+  background: #d86c46;
+  appearance: none;
+  border: 0;
+  border-radius: 0.2rem;
+}
+#progress {
+  margin-top: 0.5rem;
+  background: #d86c46;
+  appearance: none;
+  border: 0;
+  border-radius: 0.2rem;
 }
 @keyframes fade {
   0% {

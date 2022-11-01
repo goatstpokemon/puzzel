@@ -22,3 +22,13 @@
   border: none;
   color: white;
 }
+
+.welcome a {
+  margin-top: 2rem;
+  background: #d86c46;
+  border-radius: 0.5rem;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  border: none;
+  color: white;
+}

@@ -9,11 +9,12 @@
     <title>The Great Escape</title>
   </head>
   <body class="overflow-hidden">
+    <section class="progress_bar">
+      <label for="progress">Ontsnapping</label>
+      <progress id="progress" value="0" max="100"></progress>
+    </section>
     <main class="scroll-snap">
       <section class="full-screen overflow-hidden">
-        <section class="progress_bar">
-          <progress id="file" value="0" max="100">32%</progress>
-        </section>
         <article class="welcome">
           <h2>
             Welkom bij <br />
@@ -284,17 +285,15 @@
       </section>
       <section class="full-screen" id="three"></section>
       <section class="full-screen">
-        <section class="progress_status">
-          <article class="progress_bar"></article>
-        </section>
-        <article>
+        <article class="welcome">
           <h2>Het dagboek van Giovanni</h2>
           <h3>7 Januari 2037:</h3>
-          <p>Ik ben bijna ontsnapt</p>
+          <p>
+            Ik ben bijna ontsnapt. Alleen nog de laatste puzzel. Waarbij je de
+            slot moet hotwiren zodat de laatste deur open gaat
+          </p>
+          <a href="/puzzel.html">Naar de laatste puzzel</a>
         </article>
-      </section>
-      <section class="full-screen">
-        <a href="/puzzel.html">Naar laatste puzzel</a>
       </section>
     </main>
     <script src="./script.js"></script>

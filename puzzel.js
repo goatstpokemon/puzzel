@@ -6,7 +6,9 @@ const ignore = document.querySelector('.ignore');
 const wh = 4;
 var gridSquare = [];
 const body = document.querySelector('body');
-
+localStorage.getItem('level1');
+localStorage.getItem('level2');
+localStorage.getItem('level3');
 let endTiles = [
   // Row 1
   'url("img/puzzel-4.avif")',
@@ -60,6 +62,7 @@ let tileBeingReplaced;
 
 // --------------------------------------- Desktop -----------------------------------------------
 const init = () => {
+  update();
   openDialog();
   for (let i = 0; i < wh * wh; i++) {
     let tile = document.createElement('div');
@@ -121,6 +124,7 @@ function dragDrop() {
 }
 // --------------------------------------- Mobile -----------------------------------------------
 const initMobile = () => {
+  update();
   for (let i = 0; i < wh * wh; i++) {
     let tile = document.createElement('div');
     tile.setAttribute('id', i);
@@ -248,7 +252,7 @@ function won() {
     gridSquare[15].style.backgroundImage.toString().toUpperCase() ===
       endTiles[15].toString().toUpperCase()
   ) {
-    showwinDialog();
+    update();
   }
 }
 
@@ -266,4 +270,24 @@ function showwinDialog() {
 }
 function closeWinDialog() {
   winDialog.close();
+}
+
+function update() {
+  var pb = document.getElementById('progress');
+  if (localStorage.getItem('level1') === 'true') {
+    pb.value = 33;
+  }
+  if (
+    localStorage.getItem('level2') === true &&
+    localStorage.getItem('level1') === true
+  ) {
+    pb.style.width = 66;
+  }
+  if (
+    localStorage.getItem('level1') === true &&
+    localStorage.getItem('level2') === true &&
+    localStorage.getItem('level3') === true
+  ) {
+    pb.style.width = 100;
+  }
 }

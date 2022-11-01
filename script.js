@@ -14,11 +14,10 @@ localStorage.setItem('level2', 'false');
 localStorage.setItem('level3', 'false');
 
 function update() {
-  var pb = document.getElementsByClassName('.progress_bar');
-  pb.style.width = 1;
+  var pb = document.getElementById('progress');
   if (localStorage.getItem('level1') === 'true') {
     console.log(localStorage.getItem('level1'));
-    pb.style.width = 33;
+    pb.value = 33;
   }
   if (
     localStorage.getItem('level2') === true &&
@@ -37,6 +36,7 @@ function update() {
 
 function nextSection() {
   let e = document.getElementById('second');
+  new Audio('./public/music/background.mp3').play();
   e.scrollIntoView({
     block: 'end',
     behavior: 'smooth',
@@ -51,6 +51,9 @@ function nextText() {
       dialogs[i].classList.remove('hidden');
     } else {
       dialogs[i].classList.add('hidden');
+    }
+    if (counter === 1) {
+      new Audio('./public/music/gavel.mp3').play();
     }
   }
   if (counter === 5) {
