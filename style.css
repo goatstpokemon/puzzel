@@ -61,7 +61,40 @@ body {
   opacity: 0;
   animation: fade 2s;
 }
+.flex {
+  display: flex;
+}
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+.mt-5 {
+  margin-top: 5rem;
+}
 
+.mb-5 {
+  margin-bottom: 5rem;
+}
+.flex-col {
+  flex-direction: column;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.progrprogress_status {
+  width: 50%;
+  background-color: #ddd;
+}
+.progress_bar {
+  position: sticky;
+  top: 0;
+  width: 1%;
+  height: 15px;
+  background-color: #4caf50;
+  text-align: center;
+  line-height: 32px;
+  color: black;
+}
 @keyframes fade {
   0% {
     opacity: 1;

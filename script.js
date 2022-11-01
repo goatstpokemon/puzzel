@@ -7,10 +7,45 @@ const countdownEL = document.getElementById('countdown');
 let score = -1;
 let scorePlayer = document.getElementById('score-player');
 const box = document.querySelectorAll('.box');
+var dialog = document.querySelector('.modal');
+var winDialog = document.querySelector('.winmodal');
+localStorage.setItem('level1', 'false');
+localStorage.setItem('level2', 'false');
+localStorage.setItem('level3', 'false');
+
+function update() {
+  var pb = document.getElementsByClassName('.progress_bar');
+  pb.style.width = 1;
+  if (localStorage.getItem('level1') === 'true') {
+    console.log(localStorage.getItem('level1'));
+    pb.style.width = 33;
+  }
+  if (
+    localStorage.getItem('level2') === true &&
+    localStorage.getItem('level1') === true
+  ) {
+    pb.style.width = 66;
+  }
+  if (
+    localStorage.getItem('level1') === true &&
+    localStorage.getItem('level2') === true &&
+    localStorage.getItem('level3') === true
+  ) {
+    pb.style.width = 100;
+  }
+}
+
+function nextSection() {
+  let e = document.getElementById('second');
+  e.scrollIntoView({
+    block: 'end',
+    behavior: 'smooth',
+    inline: 'center',
+  });
+}
 function nextText() {
   let e = document.getElementById('two');
   counter += 1;
-  console.log(counter);
   for (i = 0; i < dialogs.length; i++) {
     if (i === counter) {
       dialogs[i].classList.remove('hidden');
@@ -24,6 +59,7 @@ function nextText() {
       behavior: 'smooth',
       inline: 'center',
     });
+
     setInterval(updateCountdown, 1000);
   }
 }
@@ -58,7 +94,7 @@ function changeColor() {
       behavior: 'smooth',
       inline: 'center',
     });
+    localStorage.level1 = 'true';
+    update();
   }
-
-  console.log(score);
 }

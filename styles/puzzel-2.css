@@ -111,6 +111,7 @@ form {
 
 .move {
   position: absolute;
+  z-index: 1;
   pointer-events: none;
   transform: rotate(-5deg);
   width: 80px !important;
