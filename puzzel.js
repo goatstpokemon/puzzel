@@ -9,48 +9,48 @@ const body = document.querySelector('body');
 
 let endTiles = [
   // Row 1
-  'url("img/puzzel-4.png")',
-  'url("img/puzzel-7.png")',
-  'url("img/puzzel-8.png")',
-  'url("img/puzzel-0.png")',
+  'url("img/puzzel-4.avif")',
+  'url("img/puzzel-7.avif")',
+  'url("img/puzzel-8.avif")',
+  'url("img/puzzel-0.avif")',
   // Row 2
-  'url("img/puzzel-0.png")',
-  'url("img/puzzel-1.png")',
-  'url("img/puzzel-7.png")',
-  'url("img/puzzel-4.png")',
+  'url("img/puzzel-0.avif")',
+  'url("img/puzzel-1.avif")',
+  'url("img/puzzel-7.avif")',
+  'url("img/puzzel-4.avif")',
   // Row 3
-  'url("img/puzzel-3.png")',
-  'url("img/puzzel-2.png")',
-  'url("img/puzzel-2.png")',
-  'url("img/puzzel-0.png")',
+  'url("img/puzzel-3.avif")',
+  'url("img/puzzel-2.avif")',
+  'url("img/puzzel-2.avif")',
+  'url("img/puzzel-0.avif")',
   // Row 4
-  'url("img/puzzel-0.png")',
-  'url("img/puzzel-8.png")',
-  'url("img/puzzel-1.png")',
-  'url("img/puzzel-3.png")',
+  'url("img/puzzel-0.avif")',
+  'url("img/puzzel-8.avif")',
+  'url("img/puzzel-1.avif")',
+  'url("img/puzzel-3.avif")',
 ];
 let startTiles = [
   // Row 1
-  'url(img/puzzel-7.png)',
-  'url(img/puzzel-4.png)',
-  'url(img/puzzel-8.png)',
-  'url(img/puzzel-0.png)',
+  'url(img/puzzel-7.avif)',
+  'url(img/puzzel-4.avif)',
+  'url(img/puzzel-8.avif)',
+  'url(img/puzzel-0.avif)',
 
   // Row 2
-  'url(img/puzzel-7.png)',
-  'url(img/puzzel-2.png)',
-  'url(img/puzzel-7.png)',
-  'url(img/puzzel-0.png)',
+  'url(img/puzzel-7.avif)',
+  'url(img/puzzel-2.avif)',
+  'url(img/puzzel-7.avif)',
+  'url(img/puzzel-0.avif)',
   // Row 3
-  'url(img/puzzel-3.png)',
-  'url(img/puzzel-2.png)',
-  'url(img/puzzel-1.png)',
-  'url(img/puzzel-0.png)',
+  'url(img/puzzel-3.avif)',
+  'url(img/puzzel-2.avif)',
+  'url(img/puzzel-1.avif)',
+  'url(img/puzzel-0.avif)',
   // Row 4
-  'url(img/puzzel-4.png)',
-  'url(img/puzzel-8.png)',
-  'url(img/puzzel-1.png)',
-  'url(img/puzzel-3.png)',
+  'url(img/puzzel-4.avif)',
+  'url(img/puzzel-8.avif)',
+  'url(img/puzzel-1.avif)',
+  'url(img/puzzel-3.avif)',
 ];
 let imageBeingDragged;
 let imageBeingReplaced;
