@@ -84,7 +84,25 @@ body {
 .overflow-hidden {
   overflow: hidden;
 }
-
+.win {
+  display: flex;
+  justify-content: center;
+}
+.wins {
+  justify-content: center;
+  padding-top: 50vh;
+  text-align: center;
+  line-height: 2.5rem;
+}
+.winbtn {
+  margin-top: 2rem;
+  background: #d86c46;
+  border-radius: 0.5rem;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  border: none;
+  color: white;
+}
 .progress_bar {
   position: sticky;
   top: 0.7rem;

@@ -252,6 +252,7 @@ function won() {
     gridSquare[15].style.backgroundImage.toString().toUpperCase() ===
       endTiles[15].toString().toUpperCase()
   ) {
+    showwinDialog();
     update();
   }
 }
@@ -264,12 +265,9 @@ function closeDialog() {
 }
 
 function showwinDialog() {
-  winDialog.showModal();
   localStorage.level3 = 'true';
   update();
-}
-function closeWinDialog() {
-  winDialog.close();
+  window.location.href = '/win.html';
 }
 
 function update() {
